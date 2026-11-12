@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff4f8;
+    font-family: Arial, sans-serif;
+    color: #79566a;
+}
+
+.contenedor {
+    max-width: 950px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* BARRA SUPERIOR */
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5dce8;
+    padding: 20px 25px;
+    border-radius: 15px;
+}
+
+.barra h2 {
+    font-size: 19px;
+    color: #a65f83;
+}
+
+.barra span {
+    color: #a66d8c;
+    font-size: 13px;
+}
+
+/* INTRODUCCIÓN */
+
+.introduccion {
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.introduccion p {
+    color: #bd83a1;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.introduccion h1 {
+    font-family: Georgia, serif;
+    font-size: 39px;
+    color: #87546f;
+    margin-bottom: 12px;
+}
+
+.introduccion h1 span {
+    color: #d58baa;
+    font-style: italic;
+}
+
+.introduccion small {
+    color: #a9879a;
+    font-size: 13px;
+}
+
+/* TABLA */
+
+.contenido {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #d9a9bf30;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.titulo h2 {
+    font-size: 18px;
+    color: #a65f83;
+}
+
+.titulo span {
+    background: #fce5ef;
+    color: #b36e91;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+/* ESTRUCTURA DE TABLA */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background: #f7e4ed;
+}
+
+th {
+    padding: 15px 10px;
+    color: #995e7b;
+    font-size: 12px;
+}
+
+td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #f5e7ed;
+    font-size: 13px;
+}
+
+tbody tr {
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    background: #fff3f8;
+}
+
+td:first-child {
+    color: #c28aa5;
+    font-weight: bold;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    text-decoration: none;
+    background: #e9b8cd;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #bd789a;
+    transform: scale(1.07);
+    box-shadow: 0 4px 10px #d9a9bf60;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10px;
+    color: #b17c97;
+    font-size: 12px;
+}
+
+footer span {
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+/* CELULARES */
+
+@media (max-width: 550px) {
+
+    .contenedor {
+        padding: 12px;
+    }
+
+    .introduccion h1 {
+        font-size: 30px;
+    }
+
+    .contenido {
+        padding: 12px;
+    }
+
+    th, td {
+        padding: 12px 5px;
+        font-size: 11px;
+    }
+
+    .boton {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .titulo h2 {
+        font-size: 14px;
+    }
+
+    footer {
+        gap: 10px;
+        font-size: 10px;
+    }
+}

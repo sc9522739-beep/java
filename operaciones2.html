@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let opcion=Number(prompt("seleccione la operacion 1=suma,2=resta,3=divicion 4=multiplicacion"));
+        if(opcion<=4){
+            let N1=Number(prompt("coloca el numero"));
+            let N2=Number(prompt("coloca el segundo numero"));
+            switch(opcion){
+                case 1:
+                    suma=N1+N2
+                    document.write("EL RESULTADO ES:"+ suma +"<br>");
+                    break;
+                case 2:
+                    resta=N1-N2
+                    document.write("EL RESULTADO ES"+ resta +"<br>");
+                    break;
+                case 3:
+                    divicion=N1/N2
+                    document.write("EL RESULTADO ES"+ divicion +"<br>");
+                 
+                   break; 
+                case 4:
+                    multiplicacion=N1*N2
+                    document.write("RESULTADO"+ multiplicacion+"<br>");   
+            
+
+            }
+        }else{
+            alert("SALIR");
+        }
+    </script>
+</body>
+</html>

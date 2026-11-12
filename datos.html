@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos personales</title>
+</head>
+<body>
+
+<script>
+
+let continua = confirm("¿Deseas agregar datos?");
+
+if (continua) {
+
+    let nombre = prompt("Ingresa tu nombre");
+    let edad = Number(prompt("Ingresa tu edad"));
+    let especialidad = prompt("Ingresa tu especialidad");
+    let correo = prompt("Ingresa tu correo");
+
+    document.write("<h2>Mis datos personales</h2>");
+    document.write("Tu nombre es: " + nombre + "<br>");
+    document.write("Tu edad es: " + edad + "<br>");
+    document.write("Tu especialidad: " + especialidad + "<br>");
+    document.write("Tu correo es: " + correo + "<br>");
+
+} else {
+
+    document.write("<h2>No agregaste tus datos ♡</h2>");
+
+}
+
+</script>
+
+</body>
+</html>
